@@ -41,6 +41,8 @@ dependencies:
   flutter_bloc: ^8.1.6
   injectable:
   get_it:
+  flutter_screenutil: ^5.9.3
+
 
 dev_dependencies:
   injectable_generator:

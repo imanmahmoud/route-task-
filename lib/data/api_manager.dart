@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 import 'package:injectable/injectable.dart';
-import 'package:route_task/data/model/products_response/Products_response.dart';
+import 'package:route_task/data/model/products_response/products_response.dart';
 
 @singleton
 class ApiManager {
@@ -16,7 +16,7 @@ class ApiManager {
       var productResponse = ProductsResponse.fromJson(json);
       return productResponse;
     } catch (e) {
-      throw e;
+      rethrow;
     }
   }
 }

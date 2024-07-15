@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-
 class ThemeManager {
-  static Color primaryColor = Color(0xFF004182);
-  static Color blueGreyColor = Color(0xFF607D8B);
+  static Color primaryColor = const Color(0xFF004182);
+  static Color blueGreyColor = const Color(0xFF607D8B);
 
   static ThemeData mainTheme = ThemeData(
+    primaryColor: primaryColor,
     textTheme: TextTheme(
-      titleMedium: GoogleFonts.poppins(
+      titleMedium: TextStyle(
           color: primaryColor, fontSize: 14, fontWeight: FontWeight.w500),
-      titleSmall: GoogleFonts.poppins(
+      titleSmall: TextStyle(
           color: primaryColor, fontSize: 10, fontWeight: FontWeight.w400),
     ),
   );

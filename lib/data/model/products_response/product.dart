@@ -1,8 +1,8 @@
 import 'package:route_task/domain/entities/product.dart';
 
-import 'Dimensions.dart';
-import 'Meta.dart';
-import 'Reviews.dart';
+import 'dimensions.dart';
+import 'meta.dart';
+import 'reviews.dart';
 
 /// id : 1
 /// title : "Essence Mascara Lash Princess"
