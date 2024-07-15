@@ -23,8 +23,9 @@ if (flutterVersionName == null) {
 }
 
 android {
+    compileSdkVersion 34
     namespace "com.example.route_task"
-    compileSdkVersion flutter.compileSdkVersion
+    /*compileSdkVersion flutter.compileSdkVersion*/
     ndkVersion flutter.ndkVersion
 
     compileOptions {

@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:route_task/core/theming_manager.dart';
 import 'package:route_task/presentation/screens/products_screen.dart';
 
+import 'core/di/di.dart';
+
 void main() {
+  configureDependencies();
   runApp(const MyApp());
 }
 
@@ -16,7 +19,6 @@ class MyApp extends StatelessWidget {
       title: 'products task',
       theme: ThemeManager.mainTheme,
       home: const ProductsScreen(),
-      /*home:,*/
     );
   }
 }
